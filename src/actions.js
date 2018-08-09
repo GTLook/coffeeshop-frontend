@@ -22,18 +22,6 @@ const pages = [
   {id: 4, name: 'register'},
   {id: 5, name: 'login'}
 ]
-// const shops = [
-//   {id: 0, name: 'Zeitgeist Coffee'},
-//   {id: 1, name: 'Cherry Street'},
-//   {id: 2, name: 'Elm Coffee Roasters'},
-//   {id: 3, name: 'Other CoffeeShop'},
-// ]
-// const items = [
-//   {id: 0, name: 'Americano'},
-//   {id: 1, name: 'Latte'},
-//   {id: 2, name: 'Cappuccino'},
-//   {id: 3, name: 'Cafe Mocha'},
-// ]
 
 
 const API = `${process.env.REACT_APP_BACKEND}`
@@ -165,7 +153,7 @@ export const createUserOrder = (userId, body) => (
   dispatch => {
     request(`/api/customer/user/${userId}/orders`,'post', body)
     .then(response => {
-      console.log('order sent!')
+      // console.log('order sent!')
     })
   }
 )

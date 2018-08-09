@@ -5,16 +5,9 @@ import io from 'socket.io-client';
 import { bindActionCreators } from 'redux'
 import {connect} from 'react-redux'
 
-
 import AuthHeader from './AuthHeader'
 import {changeActivePage} from '../actions'
-// import { withAuthentication } from '../helpers'
 import { request, AuthenticationService, withAuthentication } from '../helpers'
-
-
-//
-// const token = localStorage.getItem('token') || 12345
-// const socket = io.connect(`http://localhost:3000?token=${token}`, {reconnect: true})
 
 
 const handleSignIn = (event, props) => {
@@ -26,7 +19,6 @@ const handleSignIn = (event, props) => {
   .then(response => {
     // this.setState({ showErrorMessage: false })
     localStorage.setItem('token', response.data.token)
-    // console.log(response.data.token);
     request('/auth/token')
     .then(response => {
       AuthenticationService.setAuthState(response.data)

@@ -10,10 +10,6 @@ import Login from './Login'
 import AuthHeader from './AuthHeader'
 import { request, AuthenticationService, withAuthentication } from '../helpers'
 
-//
-// const token = localStorage.getItem('token') || 12345
-// const socket = io.connect(`http://localhost:3000?token=${token}`, {reconnect: true})
-
 
 const handleRegister = (event,props) => {
   event.preventDefault()

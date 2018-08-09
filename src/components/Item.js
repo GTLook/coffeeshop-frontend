@@ -11,18 +11,15 @@ import {changeActivePage, addToCart,setActiveItemOptions} from '../actions'
 import Header from './Header'
 
 const handleAddToCart = (props, item) => {
-  // console.log('hi');
   props.addToCart(item)
   props.changeActivePage(1)
 }
 
 const handleOptionSelect = (props, options) => {
-  // console.log(props)
   props.setActiveItemOptions(options)
 }
 
 const Item = (props) => {
-  // console.log(props);
   const {activeItem} = props
   return (
     <Swipeable onSwipeLeft={()=>props.changeActivePage(1)}>
