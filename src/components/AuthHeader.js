@@ -8,7 +8,6 @@ import {changeActivePage} from '../actions'
 
 const token = localStorage.getItem('token') || 12345
 
-
 const AuthHeader = (props) => {
   return (
     <header className='auth-header'>

@@ -8,8 +8,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
 /*  Basic Layout Structure */
 
 body {
@@ -269,7 +267,6 @@ h1.coffeeshop-item-card-title {
 
 section.cart-section {
   width: auto;
-  /* border-bottom: 1px solid rgba(45,30,23,.15); */
   background-color: white;
 }
 
@@ -283,8 +280,6 @@ h1.cart-section-title {
 }
 
 .cart-info {
-  /* border-top: 1px solid rgba(45,30,23,.3);
-  border-bottom: 1px solid rgba(45,30,23,.15); */
   padding-bottom: 30px;
 }
 
@@ -325,7 +320,6 @@ input.cart-pickup-time-slider{
 
 .cart-item-card {
   height: 100px;
-  /* border-bottom: 1px solid rgba(45,30,23,.15); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -427,18 +421,13 @@ header.auth-header {
   background-position: center;
   background-size:contain;
   background-repeat: no-repeat;
-  /* border-bottom: 1px solid rgba(45,30,23,.3); */
   background-color: white;
 }
 
 #toast-container {
   top: 0px !important;
-  /* right: 10px !important; */
   left: auto !important;
   bottom: auto !important;
-  /* left: 10% !important; */
-  /* background-color: red !important; */
-  /* height: 100px !important; */
 }
 
 .toast {

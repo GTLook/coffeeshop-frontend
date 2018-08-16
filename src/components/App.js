@@ -12,15 +12,6 @@ import Register from './Register'
 import Login from './Login'
 import { request, AuthenticationService } from '../helpers'
 
-// const token = localStorage.getItem('token') || 12345
-// const socket = io.connect(`http://localhost:3000?token=${token}`, {reconnect: true})
-//
-// const handlePlaceOrder = event => {
-//   console.log('hi');
-//   // socket.emit('chat message',`${token}`)
-// }
-
-
 class App extends Component {
   componentDidMount(){
     request('/auth/token')
